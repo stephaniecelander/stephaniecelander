@@ -8,7 +8,7 @@
 	</head>
 
 	<!-- this is the body of the page -->
-	<body class="is-preload">
+	<body>
 	<body style="background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/113361-turquoise-blurred-background-vector.jpg?w=800&q=95'); background-size: cover;">
 		<!-- "div" wraps the content in the layout -->
 		<div id="wrapper">
@@ -49,3 +49,4 @@
 				<p class="copyright">Designed by:Stephanie Celander</p>
 			</footer>
 		</div>
+</html>
