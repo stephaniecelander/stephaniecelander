@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+		<!-- this section is the "head" of the website. It is the tab on tope when opening the website and not on the main page -->
+	<head>
+		<title>About Me ~ Stephanie Celander</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, intitial-scale=1, user-scalable=no" />
+	</head>
+
+	<!-- this is the body of the page -->
+	<body>
+	<body style="background-image: url('https://ak.picdn.net/shutterstock/videos/4883507/thumb/1.jpg'); background-size: cover;">
+		<!-- "div" wraps the content in the layout -->
+		<div id="wrapper">
+			<header id="header">
+				<div class="content">
+					<div class="innter">
+
+						<nav>
+							<link rel="stylesheet" href="nav.css">
+
+								<li>
+									<a href="#home">Home</a>
+								</li>
+								<li>
+									<a href="#about">About</a>
+								</li>
+								<li>
+									<a href="#projects">Projects</a>
+								</li>
+								<li>
+									<a href="#contact">Contact</a>
+								</li>
+						</nav>
+
+						<h1 style="font-family:optima; font-size:280%;  color: white; text-align: center">
+							Get to Know Stephanie
+						</h1>
+
+						<p style="font-family:optima; color: white; text-indent: 50px; font-size:160%">
+            Hello. I am Stephanie Celander. I live in Joliet, IL with my four children and variety of animals. I currently work as a stay at home mom to my children and devote my time to managing a family of five, managing my kids e-learning, working on completing my college degree and career change. I also breed, raise and train competitive dressage horses.
+            </p>
+            
+            <p style="font-family:optima; color: white; text-indent: 50px; font-size:160%">
+            In my free time I enjoy riding my horses, running and bike riding. When I do have downtime, I am usually planning my next home improvment project or our next trip to Disney World. I also foster and train non-adoptable animals. I love to give a chance to those who others have given up on.  
+            </p>
+       
+            
+             <p style="font-family:optima; color: white; text-indent: 50px; font-size:160%">
+             I previously attended Univeristy of Findlay where I worked on an associates degree for equestrian science and equestrian business managment. After years of being a stay at home mom and many life changes, I decided to enroll in Southern New Hampshire University to work on a degree in computer science. With this degree, I plan on pursue a career as a Scrum Master or project leader.   
+            </p>
+           
+					</div>
+				</div>
+
+
+			<!--footer tha appears at the bottom of the page -->
+			<footer id="footer;" style="font-family:optima; font-size:100%; text-align: center;">
+				<p class="copyright">Designed by:Stephanie Celander</p>
+			</footer>
+		</div>
+</html>
