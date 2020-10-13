@@ -1,0 +1,14 @@
+body {
+  /* The image used */
+  background: url("cs499bg.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
