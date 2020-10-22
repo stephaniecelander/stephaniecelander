@@ -1,0 +1,49 @@
+//establishing parent modes
+>../startMongod.sh
+>mongo
+>use Stephanies_Place
+>db.collection.insert({_id: "Resturant", parent: "Stephanies_Place"})
+>db.collection.insert({_id: "Address", parent: "Stephanies_Place"})
+>db.collection.insert({_id: "Entree", parent: "Resturant"})
+>db.collection.insert({_id: "Desert", parent: "Resturant"})
+>db.collection.insert({_id: "Joliet", parent: "Address"})
+>db.collection.insert({_id: "60435", parent: "Address"})
+
+//searching parent modes and connections
+>db.collection.find({parent: "Stephanies_Place"})
+{ "_id" : "Resturant", "parent" : "Stephanies_Place" }
+{ "_id" : "Address", "parent" : "Stephanies_Place" }
+>db.collection.find({parent: "Resturant"})
+{ "_id" : "Entree", "parent" : "Resturant" }
+{ "_id" : "Desert", "parent" : "Resturant" }
+>db.collection.find({parent: "Address"})
+{ "_id" : "Joliet", "parent" : "Address" }
+{ "_id" : "60435", "parent" : "Address" }
+
+//change Resturant and remove
+>db.collection.update({_id: "Resturant"},{$set: {parent: "Restaurant"}})
+>db.collection.remove({parent: "Resturant"})
+>db.collection.find({parent: "Stephanies_Place"})
+{ "_id" : "Address", "parent" : "Stephanies_Place"}
+
+//using new parent node Employee and setting child nodes
+>db.collection.insert({_id: "David", children [] })
+>db.collection.insert({_id: "Susan", children [] })
+>db.collection.insert({_id: "Charlie", children [] })
+>db.collection.insert({_id: "Employees", children [ "David", "Susan", "Charlie"] })
+>db.collection.insert({_id: "Stephanies_Place", children: [ "Employees" ] })
+
+//create path between nodes
+>use SNHU
+>db.collection.insert({_id: "University", path: null})
+>db.collection.insert({_id: "Bachelors degree", path: "University"})
+>db.collection.insert({_id: "Computer Science", path: "Bachelors degree"})
+>db.collection.insert({_id: "CS-499", path: "Computer science"})
+
+//seeing the path connections
+>db.collection.find().sort({ path:1 })
+{ "_id" : "University", "path" : null}
+{ "_id" : "Computer science", "path" : "Bachelrs degree"}
+{ "_id" : "CS-499", "path" : "Computer science"}
+{ "_id" : "Bachelors degree", "path" : "University"}
+
