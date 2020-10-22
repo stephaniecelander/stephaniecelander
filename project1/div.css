@@ -1,0 +1,9 @@
+div {
+  background-color: black;
+  width: 1375px;
+  height: 100%;
+  border: 15px white;
+  padding: 70px;
+  margin: 20px;
+  overflow: scroll;
+}
